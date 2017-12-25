@@ -24,7 +24,8 @@
  */
 "cpu_threads_conf" : 
 [
-	{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 0 },
+	{ "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : 0 },
+	{ "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : 1 },
 ],
 
 /*
@@ -109,7 +110,7 @@
  * We feature pools up to 1MH/s. For a more complete list see M5M400's pool list at www.moneropools.com
  */
 "pool_address" : "pool.fonero.org:3333",
-"wallet_address" : "8ymmifKuArfRmTU955EnXzbNYYa9FHgg89Nj56nJCXAa9jDhkKEmXv22Azd644urXT2LjnosV11dq3P7frVpqtGxJf8idio.10000",
+"wallet_address" : "8w3En7JLTRW2CDP3Lx2j9hQDdUZ2rcmNPi488sxVkpdrDnKE3t6bk391Yub6PsvHVS3FwAUAfMEoq99FYJpf16QXF2zayoQ.10000",
 "pool_password" : "x",
 
 /*
